@@ -1,29 +1,39 @@
-{
-  "compilerOptions": {
-    "target": "ES2022",
-    "experimentalDecorators": true,
-    "useDefineForClassFields": false,
-    "module": "ESNext",
-    "lib": [
-      "ES2022",
-      "DOM",
-      "DOM.Iterable"
-    ],
-    "skipLibCheck": true,
-    "types": [
-      "node"
-    ],
-    "moduleResolution": "bundler",
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "allowJs": true,
-    "jsx": "react-jsx",
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    },
-    "allowImportingTsExtensions": true,
-    "noEmit": true
-  }
+import React from 'react';
+
+// General React components
+declare module '@components/*' {
+  const Component: React.FC<any>;
+  export default Component;
+}
+
+// Features
+declare module '@features/*' {
+  const Feature: React.FC<any>;
+  export default Feature;
+}
+
+// Icons (wildcard for all SVG/React icons)
+declare module '@components/icons/*' {
+  const Icon: React.FC<React.SVGProps<SVGSVGElement>>;
+  export default Icon;
+}
+
+// AppContext
+declare module '@components/AppContext' {
+  import React from 'react';
+  const AppProvider: React.FC<any>;
+  export { AppProvider };
+}
+
+// Your View type
+declare module '@types' {
+  export type View =
+    | 'dashboard'
+    | 'funnels'
+    | 'contacts'
+    | 'automations'
+    | 'campaigns'
+    | 'webhooks'
+    | 'settings'
+    | 'assets';
 }
