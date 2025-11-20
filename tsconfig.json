@@ -17,11 +17,11 @@
 
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["Funnelflow/components/*"],
-      "@features/*": ["Funnelflow/features/*"],
-      "@types/*": ["Funnelflow/types/*"]
+      "@components/*": ["Funnelflow(1)/components/*"],
+      "@features/*": ["Funnelflow(1)/features/*"],
+      "@types/*": ["Funnelflow(1)/types/*"]
     }
   },
 
-  "include": ["Funnelflow/**/*", "*.ts", "*.tsx"]
+  "include": ["Funnelflow(1)/**/*", "*.ts", "*.tsx"]
 }
