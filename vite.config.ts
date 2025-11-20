@@ -22,9 +22,9 @@ export default defineConfig(({ mode }) => {
 
     resolve: {
       alias: {
-        '@components': path.resolve(__dirname, 'Funnelflow/components'),
-        '@features': path.resolve(__dirname, 'Funnelflow/features'),
-        '@types': path.resolve(__dirname, 'Funnelflow/types.d.ts'),
+        '@components': path.resolve(__dirname, 'Funnelflow(1)/components'),
+        '@features': path.resolve(__dirname, 'Funnelflow(1)/features'),
+        '@types': path.resolve(__dirname, 'Funnelflow(1)/types.d.ts'),
         '@': path.resolve(__dirname),
       },
       extensions: ['.js', '.ts', '.tsx', '.jsx'], // helps Vite resolve TSX/TS
