@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from '@components/Sidebar';
-import Header from '.@components/Header';
-import { View } from '.@types';
+import Header from '@components/Header';
+import { View } from '@types';
 import DashboardView from '@features/dashboard/DashboardView';
 import FunnelsView from '@features/funnels/FunnelsView';
 import ContactsView from '@features/contacts/ContactsView';
@@ -9,7 +9,7 @@ import AutomationsView from '@features/automations/AutomationsView';
 import CampaignsView from '@features/campaigns/CampaignsView';
 import WebhooksView from '@features/webhooks/WebhooksView';
 import SettingsView from '@features/settings/SettingsView';
-import { AppProvider } from './AppContext';
+import { AppProvider } from '/AppContext';
 import AssetsView from '@features/assets/AssetsView';
 
 
