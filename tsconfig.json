@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "experimentalDecorators": true,
-    "useDefineForClassFields": false,
     "module": "ESNext",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
     "types": ["node"],
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
     "moduleResolution": "bundler",
     "isolatedModules": true,
     "moduleDetection": "force",
@@ -14,12 +14,14 @@
     "jsx": "react-jsx",
     "allowImportingTsExtensions": true,
     "noEmit": true,
+
     "baseUrl": ".",
     "paths": {
       "@components/*": ["Funnelflow/components/*"],
       "@features/*": ["Funnelflow/features/*"],
-      "@types": ["Funnelflow/types.d.ts"]
+      "@types/*": ["Funnelflow/types/*"]
     }
   },
+
   "include": ["Funnelflow/**/*", "*.ts", "*.tsx"]
 }
